@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "neon";
+  src: url("./Clip.ttf");
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-image: linear-gradient(to right top, #26baee, #9fe8fa);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.lightUp {
+  .title {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+h1 {
+  font-family: "neon";
+  font-size: 2rem;
+}
+
+.winnig {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+table {
+  margin: 0 auto;
+
+  tr {
+    display: flex;
+
+    .cell {
+      width: 4rem;
+      height: 4rem;
+      background-color: #000;
+      margin: 2px;
+      border-radius: 3px;
+
+      &.isLit {
+        background-color: #fff;
+      }
+    }
+  }
+}
